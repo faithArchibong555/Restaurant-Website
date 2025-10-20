@@ -1,80 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bambis' Kitchen</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bambi's Kitchen</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NavBar -->
-     <header>
-        <div class="container div">
-            <h1 class="logo">Bambi Kitchen</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Delicacies</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn">Menu</a>
-     </header>
 
-     <!-- Hero Section -->
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Bambi</a>
 
-     <section class="hero">
-        <div class="hero content">
-            <h2>Food that Speaks for Itself</h2>
-            <p>Bulk order and Nation wide Delivery</p>
-            <a href="#" class="btn primary">Order Here</a>
-        </div>
-         <div class="hero-img">
-      <img src="Afang" alt="Afang Soup">
-     </div>
-     </section>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
 
-      <!-- Mission Section -->
-     <section class="mission container">
-       <div class="mission-text">
-        <h3>Native Delicacies</h3>
-        <p>We take pride in serving authentic Nigerian meals that remind you of home.
-            From Afang, Oha, and Okra soup to White Soup, Vegetable soup, Coconut Rice, Fried Rice , Beans , Rice & Stew, and Spaghetti -
-            every dish is carefully prepared with fresh ingredients and rich flavors that leave you wanting more.
-            Whether it's a single plate or bulk orders for families, offices , and events, our mission is to bring people together through wholesome, delicious food that truly satisfies.
-       </div>
-       <div class="mission-img">
-      <img src="chef.png" alt="Chef">
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn small" href="#">Menu</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Blog Section -->
-  <section class="blog container">
-    <h3>Restaurant Blog & Update</h3>
-    <div class="blog-cards">
-      <div class="card">
-        <img src="Afang.png" alt="Afang Soup">
-        <p class="date"> 10th October, 2025</p>
-        <h4>Delicious Afang Soup made specially for you will be available</h4>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          Delicious food that<br />
+          speaks for itself
+        </h1>
+        <p class="hero-sub">We take pride in serving authentic Nigerian meals that remind you of home.</p>
+        <a href="#" class="btn primary">Book a Plate</a>
       </div>
-      <div class="card">
-        <img src="Beans.png" alt="Beans">
-        <p class="date">12th October, 2025</p>
-        <h4>Beans and Dodo will be available</h4>
-      </div>
-      <div class="card">
-        <img src="Okra.png" alt="Okra.png">
-        <p class="date">14th October, 2025</p>
-        <h4>Okra soup just like home!</h4>
+
+      <!--soup plate is visually centered and overlaps the next white section -->
+      <div class="hero-visual" aria-hidden="true">
+        <img src="/images/OkraandJollof.png" alt="Okra and Jollof plate" class="plate">
       </div>
     </div>
   </section>
 
-<!-- Footer -->
- <footer>
-     <p>&copy; 2025 Bambsi' Kitchen. All rights reserved.</p>
- </footer>
+  <!-- Trusted logos strip (white band) -->
+  <section class="trusted">
+    <div class="container logos">
+      <img src="logo-1.png" alt="Logo 1">
+      <img src="logo-2.png" alt="Logo 2">
+      <img src="logo-3.png" alt="Logo 3">
+      <img src="logo-4.png" alt="Logo 4">
+    </div>
+  </section>
+
+  <!-- Mission / Chef -->
+  <section class="mission">
+    <div class="container mission-grid">
+      <div class="mission-text">
+        <span class="eyebrow">Our Mission</span>
+        <blockquote class="mission-quote">
+          “Authentic Native and incontinental meals, expertly crafted with care, tradition, and exceptional flavors”
+        </blockquote>
+        <p class="mission-author">— Natalia T. Morgan</p>
+      </div>
+      <div class="mission-media">
+        <img src="chef.png" alt="Chef portrait" class="chef">
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / updates -->
+  <section class="blog">
+    <div class="container">
+      <h2 class="section-title">Bambi's Blog & Update</h2>
+
+      <div class="cards">
+        <article class="card">
+          <img src="images/Afang Soup.jpg" alt="Article 1. Afang Soup">
+          <div class="card-body">
+            <time datetime="2025-10-31" class="date">October 31, 2025</time>
+            <h3 class="card-title">Delicious Afang Soup made specially for you will be available</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/Beans and Dodo.jpg" alt="Article 2. Beans and Plantain">
+          <div class="card-body">
+            <time datetime="2025-11-02" class="date">November 02, 2025</time>
+            <h3 class="card-title">Beans and Dodo will be available<</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/okra soup.jpg" alt="Article 3. Okra Soup">
+          <div class="card-body">
+            <time datetime="2025-11-03" class="date">November 03, 2025</time>
+            <h3 class="card-title">Okra soup just like home!</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured food highlight -->
+  <section class="highlight">
+    <div class="container highlight-inner">
+      <img src="images/Rice and Stew.jpg" alt="Rice and Stew" class="highlight-img">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2025 Bambi's Restaurant. All rights reserved.</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle (tiny, accessible)
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
