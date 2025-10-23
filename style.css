@@ -232,14 +232,14 @@ body {
    HIGHLIGHT IMAGE (dark band)
    ------------------------- */
 .highlight {
-  padding: 56px 0 88px;
+  padding: 56px 112px 60px;
   background: var(--bg-dark);
   display:flex;
   align-items:center;
   justify-content:center;
 }
 .highlight-img {
-  width: min(200px, 96%);
+  width: min(250px, 96%);
   align-items: center;
   border-radius: 14px;
   box-shadow: 0 40px 80px rgba(2,6,4,0.6);
